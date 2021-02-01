@@ -27,6 +27,17 @@
     &__column:nth-child(2) {
       width: 260px;
     }
+
+    .checkbox-buttons {
+      &__title {
+        margin-top: 0;
+        margin-bottom: 17px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
   }
 
   .cards {
@@ -39,3 +50,10 @@
     background-color: #f4f4f6;
   }
 }
+
+@import "../pug/blocks/button/button";
+@import "../pug/blocks/checkbox/checkbox";
+@import "../pug/blocks/dropdown/dropdown";
+@import "../pug/blocks/icon-link/icon-link";
+@import "../pug/blocks/masked-text-field/masked-text-field";
+@import "../pug/blocks/text-field/text-field";

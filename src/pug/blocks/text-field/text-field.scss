@@ -1,0 +1,29 @@
+.text-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  &__label {
+    margin-bottom: 5px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__input {
+    padding: 12px 15px 10px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $dark-75;
+    border: 1px solid $dark-25;
+    border-radius: 4px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 24px;
+      color: $dark-25;
+    }
+  }
+}

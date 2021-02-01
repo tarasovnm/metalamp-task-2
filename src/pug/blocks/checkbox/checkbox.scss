@@ -1,0 +1,44 @@
+.checkbox {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 11px;
+
+  &__input {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__mark {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -30px;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: 1px solid $dark-25;
+    border-radius: 4px;
+
+    svg {
+      opacity: 0;
+      margin-left: -1px;
+      margin-top: -2px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $dark-50;
+  }
+
+  &__input:checked + &__mark {
+    border: 1px solid #bc9cff;
+
+    svg {
+      opacity: 1;
+    }
+  }
+}
