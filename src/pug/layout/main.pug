@@ -1,3 +1,10 @@
+include ../blocks/text-field/text-field
+include ../blocks/dropdown/dropdown
+include ../blocks/masked-text-field/masked-text-field
+include ../blocks/checkbox/checkbox
+include ../blocks/button/button
+include ../blocks/icon-link/icon-link
+
 block variables
 
 doctype html
@@ -7,6 +14,4 @@ html(lang='ru')
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
     title #{title}
   body(class=pageClass)
-    include ../includes/modules/header
     block content
-    include ../includes/modules/footer

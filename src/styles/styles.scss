@@ -5,3 +5,37 @@
 @import "global";
 
 @import "typography";
+
+.uikit-page {
+  background-color: #e5e5e5;
+
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .form-elements {
+    display: flex;
+    justify-content: space-between;
+    padding: 140px;
+    background-color: #ffffff;
+
+    &__column {
+      width: 320px;
+    }
+
+    &__column:nth-child(2) {
+      width: 260px;
+    }
+  }
+
+  .cards {
+    padding: 140px;
+    background-color: #f4f4f6;
+  }
+
+  .headers-footers {
+    padding: 140px 0;
+    background-color: #f4f4f6;
+  }
+}
