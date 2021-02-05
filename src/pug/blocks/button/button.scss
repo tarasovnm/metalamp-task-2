@@ -1,2 +1,43 @@
 .button {
+  position: relative;
+  padding: 14px 20px 13px 20px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 100rem;
+  border: solid 2px transparent;
+  background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(180deg, $start-gradient 0%, $end-gradient 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: none;
+
+  &__arrow {
+    position: absolute;
+    display: none;
+  }
+
+  &:hover {
+    // opacity: 0.5;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+      linear-gradient(180deg, $start-gradient-hover 0%, $end-gradient-hover 100%);
+  }
+
+  &--light {
+    box-shadow: 2px 1000px 1px #fff inset;
+    color: $purple;
+  }
+
+  &--go {
+    width: 100%;
+
+    .button__arrow {
+      display: block;
+      right: 12px;
+      top: 12px;
+    }
+  }
 }

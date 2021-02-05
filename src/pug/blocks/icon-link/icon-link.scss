@@ -1,0 +1,16 @@
+.icon-link {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: $purple;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $dark-50;
+  }
+}

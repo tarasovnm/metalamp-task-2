@@ -38,6 +38,17 @@
         text-transform: uppercase;
       }
     }
+
+    .buttons {
+      &__title {
+        margin-top: 0;
+        margin-bottom: 17px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    }
   }
 
   .cards {
