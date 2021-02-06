@@ -18,19 +18,26 @@ block content
 
       .form-elements__column 
         .checkbox-buttons
-          p.checkbox-buttons__title Checkbox Buttons
+          p.checkbox-buttons__title.group-title Checkbox Buttons
           +checkbox("smoke", "Можно курить")
           +checkbox("pets", "Можно с питомцами", true)
           +checkbox("guests", "Можно пригласить гостей (до 10 человек)", true)
         .radio-buttons
-        .toggle
+          p.radio-buttons__title.group-title Radio buttons
+          .radio-buttons__wrapper
+            +radio("male", "gender", "male", "Мужчина", true)
+            +radio("female", "gender", "female", "Женщина")
+        .toggle-buttons
+          p.toggle-buttons__title.group-title Toggle
+          +toggle("get-proposals", "Получать спецпредложения", true)
+          +toggle("get-proposals", "Получать спецпредложения")
         .like-button
         .rate-button
 
       .form-elements__column
         .range-slider
         .buttons
-          p.buttons__title Buttons
+          p.buttons__title.group-title Buttons
           +button("button1", "Сlick me", "")
           br
           +button("button2", "Сlick me", "button--light")

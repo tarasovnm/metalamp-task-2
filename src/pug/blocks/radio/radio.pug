@@ -1,0 +1,6 @@
+mixin radio(id, name, value, label, checked)
+  .radio
+    label.radio__label
+      input.radio__input(type="radio" id=id name=name value=value checked=checked)
+      span.radio__mark
+      span.radio__text= label

@@ -1,0 +1,49 @@
+.toggle {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 10px;
+
+  &__input {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__mark {
+    position: absolute;
+    top: 2px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+    width: 40px;
+    height: 20px;
+    background: #ffffff;
+    border: 1px solid $dark-25;
+    border-radius: 10px;
+
+    &::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      margin-left: 4px;
+      background: $dark-25;
+      border-radius: 50%;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $dark-75;
+  }
+
+  &__input:checked + &__mark {
+    border: 1px solid #bc9cff;
+
+    &::before {
+      margin-left: 22px;
+      background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+    }
+  }
+}

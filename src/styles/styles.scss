@@ -28,25 +28,28 @@
       width: 260px;
     }
 
-    .checkbox-buttons {
-      &__title {
-        margin-top: 0;
-        margin-bottom: 17px;
-        font-size: 12px;
-        line-height: 15px;
-        font-weight: 700;
-        text-transform: uppercase;
-      }
+    .group-title {
+      margin-top: 0;
+      margin-bottom: 17px;
+      font-size: 12px;
+      line-height: 15px;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
-    .buttons {
-      &__title {
-        margin-top: 0;
-        margin-bottom: 17px;
-        font-size: 12px;
-        line-height: 15px;
-        font-weight: 700;
-        text-transform: uppercase;
+    .checkbox-buttons {
+      margin-bottom: 40px;
+    }
+
+    .radio-buttons {
+      margin-bottom: 40px;
+
+      &__wrapper {
+        display: flex;
+      }
+
+      .radio:first-child {
+        margin-right: 20px;
       }
     }
   }
@@ -68,3 +71,5 @@
 @import "../pug/blocks/icon-link/icon-link";
 @import "../pug/blocks/masked-text-field/masked-text-field";
 @import "../pug/blocks/text-field/text-field";
+@import "../pug/blocks/radio/radio";
+@import "../pug/blocks/toggle/toggle";
