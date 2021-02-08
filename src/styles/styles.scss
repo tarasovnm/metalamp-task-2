@@ -1,4 +1,5 @@
 @import "~normalize.css";
+@import "~material-design-icons/iconfont/material-icons.css";
 
 @import "vars";
 @import "fonts";
@@ -52,6 +53,14 @@
         margin-right: 20px;
       }
     }
+
+    .toggle-buttons {
+      margin-bottom: 40px;
+    }
+
+    .like-buttons {
+      margin-bottom: 40px;
+    }
   }
 
   .cards {
@@ -73,3 +82,5 @@
 @import "../pug/blocks/text-field/text-field";
 @import "../pug/blocks/radio/radio";
 @import "../pug/blocks/toggle/toggle";
+@import "../pug/blocks/like-button/like-button";
+@import "../pug/blocks/rate-button/rate-button";

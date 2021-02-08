@@ -1,0 +1,22 @@
+.rate-button {
+  margin-bottom: 10px;
+
+  &__star {
+    i {
+      color: $purple;
+    }
+
+    i:first-child {
+      display: none;
+    }
+
+    &--checked {
+      i:first-child {
+        display: inline-block;
+      }
+      i:last-child {
+        display: none;
+      }
+    }
+  }
+}
