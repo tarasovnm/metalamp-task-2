@@ -1,0 +1,9 @@
+mixin color(name, code, modifier)
+  li.colors-and-type__color.color
+    if modifier
+      div(class="color__color" + " color__color--" + modifier)
+    else
+      .color__color
+    .color__description
+      p.color__name= name
+      p.color__code= code

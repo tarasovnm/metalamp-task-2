@@ -1,0 +1,53 @@
+.color {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__color {
+    width: 70px;
+    height: 70px;
+    margin-right: 40px;
+    background-color: $dark-100;
+    border-radius: 6px;
+
+    &--dark-75 {
+      background-color: $dark-75;
+    }
+
+    &--dark-50 {
+      background-color: $dark-50;
+    }
+
+    &--dark-25 {
+      background-color: $dark-25;
+    }
+
+    &--dark-5 {
+      background-color: $dark-5;
+    }
+
+    &--purple {
+      background-color: $purple;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+  }
+
+  &__name,
+  &__code {
+    margin: 0;
+    font-size: 19px;
+    line-height: 28px;
+    color: $dark-100;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__code {
+    font-weight: 400;
+  }
+}

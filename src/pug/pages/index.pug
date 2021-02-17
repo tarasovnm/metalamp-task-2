@@ -6,6 +6,18 @@ block variables
 
 block content
   .container
+    p Colors & Type
+    section.colors-and-type
+      ul.colors-and-type__colors
+        +color("Dark Shade 100%", "#1F2041")
+        +color("Dark Shade 75%", "#1F2041", "dark-75")
+        +color("Dark Shade 50%", "#1F2041", "dark-50")
+        +color("Dark Shade 25%", "#1F2041", "dark-25")
+        +color("Dark Shade 5%", "#1F2041", "dark-5")
+        +color("Dark Shade Purple", "#BC9CFF", "purple")
+        +color("Dark Shade Green", "#6FCF97", "green")
+      .colors-and-type__fots
+
     p Form elements
     section.form-elements
       .form-elements__column

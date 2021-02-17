@@ -15,6 +15,22 @@
     margin: 0 auto;
   }
 
+  .colors-and-type {
+    padding: 145px 158px 140px 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+
+    &__colors {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    &__fonts {
+    }
+  }
+
   .form-elements {
     display: flex;
     justify-content: space-between;
@@ -74,6 +90,7 @@
   }
 }
 
+@import "../pug/blocks/color/color";
 @import "../pug/blocks/button/button";
 @import "../pug/blocks/checkbox/checkbox";
 @import "../pug/blocks/dropdown/dropdown";
