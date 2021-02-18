@@ -142,6 +142,18 @@
       }
     }
 
+    .filter-date-dropdown {
+      &__wrapper {
+        width: 266px;
+      }
+    }
+
+    .subscription-text-field-block {
+      &__wrapper {
+        width: 267px;
+      }
+    }
+
     .checkbox-buttons {
       margin-bottom: 40px;
     }
@@ -190,3 +202,4 @@
 @import "../pug/blocks/like-button/like-button";
 @import "../pug/blocks/rate-button/rate-button";
 @import "../pug/blocks/date-dropdown/date-dropdown";
+@import "../pug/blocks/subscription-text-field/subscription-text-field";

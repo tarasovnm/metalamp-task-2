@@ -1,0 +1,7 @@
+mixin subscription-text-field(id, label, placeholder, value)
+  .subscription-text-field
+    label.subscription-text-field__label(for=id)= label
+    .subscription-text-field__wrapper
+      input.subscription-text-field__input(type="text" name=id id=id placeholder=placeholder value=value)
+      button.subscription-text-field__btn
+        i.material-icons arrow_forward
