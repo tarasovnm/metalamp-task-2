@@ -1,8 +1,9 @@
-mixin dropdown(label, placeholder)
+mixin dropdown(label, placeholder, status)
   .dropdown
     p.dropdown__label= label
+    p.dropdown__status= status
     .dropdown__wrapper
-      .dropdown__head.active
+      .dropdown__head
         span.dropdown__current= placeholder
         .dropdown__icon
           <svg (width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">

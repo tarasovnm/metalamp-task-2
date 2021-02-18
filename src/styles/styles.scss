@@ -125,6 +125,23 @@
       text-transform: uppercase;
     }
 
+    .date-dropdowns {
+      display: flex;
+      justify-content: space-between;
+
+      &__column {
+        width: 50%;
+      }
+
+      &__column:first-child {
+        padding-right: 10px;
+      }
+
+      &__column:last-child {
+        padding-left: 10px;
+      }
+    }
+
     .checkbox-buttons {
       margin-bottom: 40px;
     }
@@ -172,3 +189,4 @@
 @import "../pug/blocks/toggle/toggle";
 @import "../pug/blocks/like-button/like-button";
 @import "../pug/blocks/rate-button/rate-button";
+@import "../pug/blocks/date-dropdown/date-dropdown";

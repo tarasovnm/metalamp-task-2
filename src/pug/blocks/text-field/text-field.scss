@@ -1,7 +1,19 @@
 .text-field {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+
+  &__status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 15px;
+    color: $dark-50;
+    text-transform: uppercase;
+  }
 
   &__label {
     margin-bottom: 5px;
@@ -24,6 +36,14 @@
       font-size: 14px;
       line-height: 24px;
       color: $dark-25;
+    }
+
+    &:hover,
+    &:focus,
+    &.hover,
+    &.focus {
+      outline: none;
+      border: 1px solid $dark-50;
     }
   }
 }

@@ -1,4 +1,12 @@
-mixin text-field(id, label, placeholder)
-  .text-field
-    label.text-field__label(for=id)= label
-    input.text-field__input(type="text" name=id id=id placeholder=placeholder)
+mixin text-field(id, label, placeholder, status, value)
+  if status=="Default"
+    .text-field
+      p.text-field__status= status
+      label.text-field__label(for=id)= label
+      input.text-field__input(type="text" name=id id=id placeholder=placeholder value=value)
+  else
+    .text-field
+      p.text-field__status= status
+      label.text-field__label(for=id)= label
+      input(class="text-field__input focus" type="text" name=id id=id placeholder=placeholder value=value)
+  
