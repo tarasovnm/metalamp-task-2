@@ -103,10 +103,21 @@
   }
 
   .form-elements {
-    display: flex;
-    justify-content: space-between;
     padding: 140px;
     background-color: #ffffff;
+
+    &__block {
+      display: flex;
+      justify-content: space-between;
+
+      &:first-child {
+        margin-bottom: 100px;
+      }
+
+      &:nth-child(2) {
+        margin-bottom: 140px;
+      }
+    }
 
     &__column {
       width: 320px;

@@ -1,5 +1,5 @@
-mixin dropdown(label, placeholder, status)
-  .dropdown
+mixin dropdown(label, placeholder, opened, status)
+  div(class= opened ? "dropdown dropdown--opened" : "dropdown") 
     p.dropdown__label= label
     p.dropdown__status= status
     .dropdown__wrapper

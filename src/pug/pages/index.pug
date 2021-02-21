@@ -30,62 +30,82 @@ block content
 
     p Form elements
     section.form-elements
-      .form-elements__column
-        +text-field("email", "Text field", "Email", "Default")
-        +text-field("address", "Text field", "Адрес", "Hover / Focus", "This is pretty awesome")
-        +dropdown("Dropdown", "Сколько гостей", "Default")
-        +masked-text-field("date", "Masked text field", "ДД.ММ.ГГГГ")
-        .date-dropdowns
-          .date-dropdowns__column
-            +date-dropdown("Date dropdown", "ДД.ММ.ГГГГ")
-          .date-dropdowns__column
-            +date-dropdown("Date dropdown", "19.08.2019")
-        .filter-date-dropdown
-          .filter-date-dropdown__wrapper
-            +date-dropdown("Filter date dropdown", "19 авг - 23 авг")
-        .subscription-text-field-block
-          .subscription-text-field-block__wrapper
-            +subscription-text-field("subscribe", "subscription text field", "Email")
+      .form-elements__block
+        .form-elements__column
+          +text-field("email", "Text field", "Email", "Default")
+          +text-field("address", "Text field", "Адрес", "Hover / Focus", "This is pretty awesome")
+          +dropdown("Dropdown", "Сколько гостей", false, "Default")
+          +masked-text-field("date", "Masked text field", "ДД.ММ.ГГГГ")
+          .date-dropdowns
+            .date-dropdowns__column
+              +date-dropdown("Date dropdown", "ДД.ММ.ГГГГ")
+            .date-dropdowns__column
+              +date-dropdown("Date dropdown", "19.08.2019")
+          .filter-date-dropdown
+            .filter-date-dropdown__wrapper
+              +date-dropdown("Filter date dropdown", "19 авг - 23 авг")
+          .subscription-text-field-block
+            .subscription-text-field-block__wrapper
+              +subscription-text-field("subscribe", "subscription text field", "Email")
 
-      .form-elements__column 
-        .checkbox-buttons
-          p.checkbox-buttons__title.group-title Checkbox Buttons
-          +checkbox("smoke", "Можно курить")
-          +checkbox("pets", "Можно с питомцами", true)
-          +checkbox("guests", "Можно пригласить гостей (до 10 человек)", true)
-        .radio-buttons
-          p.radio-buttons__title.group-title Radio buttons
-          .radio-buttons__wrapper
-            +radio("male", "gender", "male", "Мужчина", true)
-            +radio("female", "gender", "female", "Женщина")
-        .toggle-buttons
-          p.toggle-buttons__title.group-title Toggle
-          +toggle("get-proposals", "Получать спецпредложения", true)
-          +toggle("get-proposals", "Получать спецпредложения")
-        .like-buttons
-          p.like-buttons__title.group-title Like button
-          +like-button("not-liked", "2")
-          +like-button("liked", "12", true)
+        .form-elements__column 
+          .checkbox-buttons
+            p.checkbox-buttons__title.group-title Checkbox Buttons
+            +checkbox("smoke", "Можно курить")
+            +checkbox("pets", "Можно с питомцами", true)
+            +checkbox("guests", "Можно пригласить гостей (до 10 человек)", true)
+          .radio-buttons
+            p.radio-buttons__title.group-title Radio buttons
+            .radio-buttons__wrapper
+              +radio("male", "gender", "male", "Мужчина", true)
+              +radio("female", "gender", "female", "Женщина")
+          .toggle-buttons
+            p.toggle-buttons__title.group-title Toggle
+            +toggle("get-proposals", "Получать спецпредложения", true)
+            +toggle("get-proposals", "Получать спецпредложения")
+          .like-buttons
+            p.like-buttons__title.group-title Like button
+            +like-button("not-liked", "2")
+            +like-button("liked", "12", true)
 
-        .rate-buttons
-          p.rate-buttons__title.group-title Rate button
-          +rate-button(4)
-          +rate-button(5)
+          .rate-buttons
+            p.rate-buttons__title.group-title Rate button
+            +rate-button(4)
+            +rate-button(5)
 
+        .form-elements__column
+          .form-elements__range
+            +range-slider("Range slider", "5 000₽ - 10 000₽")
+          .buttons
+            p.buttons__title.group-title Buttons
+            +button("button1", "Сlick me", "")
+            br
+            +button("button2", "Сlick me", "button--light")
+            br
+            +icon-link("Сlick me")
+            br
+            +button("button3", "Перейти к оплате", "button--go")
+          +pagination("Pagination", "1 – 12 из 100+ вариантов аренды")
+      
+      .form-elements__block
+        .form-elements__column
+          +dropdown("Dropdown", "2 спальни, 2 кровати...", false, "Default")
+          +dropdown("Dropdown", "2 спальни, 2 кровати...", true, "Expanded")
+        .form-elements__column
+          +dropdown("Dropdown", "Сколько гостей", true)
+        .form-elements__column
+          +dropdown("Dropdown", "2 гостя", true)
 
-      .form-elements__column
-        .form-elements__range
-          +range-slider("Range slider", "5 000₽ - 10 000₽")
-        .buttons
-          p.buttons__title.group-title Buttons
-          +button("button1", "Сlick me", "")
-          br
-          +button("button2", "Сlick me", "button--light")
-          br
-          +icon-link("Сlick me")
-          br
-          +button("button3", "Перейти к оплате", "button--go")
-        +pagination("Pagination", "1 – 12 из 100+ вариантов аренды")
+      .form-elements__block
+        .form-elements__column
+          p test string
+        .form-elements__column
+        .form-elements__column
+
+      .form-elements__block
+        .form-elements__column
+        .form-elements__column
+        .form-elements__column
 
     p Cards
     section.cards
