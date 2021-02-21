@@ -3,6 +3,14 @@ extends ../layout/main
 block variables
   - var title = 'MetaLamp Task 2'
   - var pageClass = 'uikit-page'
+  - var expandable_options = [
+  -   {id: "breackfast", label: "Завтрак", checked: false}, 
+  -   {id: "desk", label: "Письменный стол", checked: true},
+  -   {id: "feeding-chair", label: "Стул для кормления", checked: true},
+  -   {id: "crib", label: "Кроватка", checked: true},
+  -   {id: "tv", label: "Телевизор", checked: false},
+  -   {id: "shampoo", label: "Шампунь", checked: false},
+  - ]
 
 block content
   .container
@@ -98,7 +106,8 @@ block content
 
       .form-elements__block
         .form-elements__column
-          p test string
+          +expandable-checkbox-list("expandable checkbox list", expandable_options, false)
+          +expandable-checkbox-list("expandable checkbox list", expandable_options, true)
         .form-elements__column
         .form-elements__column
 

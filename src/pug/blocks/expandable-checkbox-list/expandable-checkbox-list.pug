@@ -1,0 +1,13 @@
+include ../checkbox/checkbox
+
+mixin expandable-checkbox-list(label, options, opened)
+  div(class= opened ? "expandable-checkbox-list expandable-checkbox-list--opened" : "expandable-checkbox-list") 
+    .expandable-checkbox-list__head
+      span.expandable-checkbox-list__title= label
+      .expandable-checkbox-list__icon
+        i.material-icons expand_more
+    .expandable-checkbox-list__body
+      ul.expandable-checkbox-list__list
+        each option in options
+          li.expandable-checkbox-list__option.option
+            +checkbox(option.id, option.label, option.checked)

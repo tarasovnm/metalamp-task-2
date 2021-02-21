@@ -1,0 +1,50 @@
+.expandable-checkbox-list {
+  margin-bottom: 20px;
+
+  &__head {
+    position: relative;
+    padding: 13px 57px 13px 0;
+    cursor: pointer;
+  }
+
+  &__title {
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    color: $dark-100;
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: $dark-50;
+  }
+
+  &__body {
+    display: none;
+    z-index: 10;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+  }
+
+  &--opened {
+    .expandable-checkbox-list__icon {
+      transform: rotate(180deg);
+    }
+
+    .expandable-checkbox-list__body {
+      display: block;
+    }
+  }
+}
