@@ -1,3 +1,12 @@
-mixin pagination(label)
+mixin pagination(label, status)
   .pagination
     p.pagination__label= label
+    .pagination__body
+      a.pagination__item.pagination__link.pagination__link--active 1
+      a.pagination__item.pagination__link(href="#") 2
+      a.pagination__item.pagination__link(href="#") 3
+      span.pagination__item.pagination__dots ...
+      a.pagination__item.pagination__link(href="#") 15
+      a.pagination__item.pagination__link.pagination__next(href="#")
+        i.material-icons arrow_forward
+    p.pagination__status= status
