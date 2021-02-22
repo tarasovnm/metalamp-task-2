@@ -1,0 +1,38 @@
+.bullet-list {
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 7px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $dark-75;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background-color: $dark-25;
+      border-radius: 5px;
+    }
+  }
+}

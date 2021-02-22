@@ -1,0 +1,12 @@
+include ../like-button/like-button
+
+mixin review(name, date, review)
+  .review
+    .review__avatar
+      .review__photo
+        img.review__image(src="img/user.jpg")
+      +like-button("murad", 12, true)
+    .review__text-block
+      p.review__name= name
+      p.review__date= date
+      p.review__text= review

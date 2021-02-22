@@ -1,7 +1,6 @@
 .like-button {
+  display: inline-block;
   position: relative;
-  padding-left: 50px;
-  margin-bottom: 10px;
 
   &__input {
     appearance: none;
@@ -10,22 +9,25 @@
 
   &__mark {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-left: -50px;
     padding-left: 5px;
+    padding-right: 5px;
     width: 40px;
     height: 20px;
     background: #ffffff;
     border: 1px solid $dark-25;
     border-radius: 10px;
 
-    svg {
-      margin-right: 5px;
-      path {
-        stroke: $dark-25;
-        stroke-width: 1;
-        fill: none;
-      }
+    i {
+      font-size: 10px;
+      line-height: 9px;
+      color: $dark-25;
+    }
+
+    i:nth-child(2) {
+      color: $purple;
+      display: none;
     }
   }
 
@@ -34,14 +36,18 @@
     line-height: 12px;
     font-weight: 400;
     color: $dark-25;
+    width: 50%;
   }
 
   &__input:checked + &__mark {
     border: 1px solid $purple;
 
-    svg path {
-      fill: $purple;
-      stroke: $purple;
+    i:nth-child(1) {
+      display: none;
+    }
+
+    i:nth-child(2) {
+      display: block;
     }
 
     .like-button__text {

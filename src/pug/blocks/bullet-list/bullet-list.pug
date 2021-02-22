@@ -1,0 +1,6 @@
+mixin bullet-list(title, list)
+  .bullet-list
+    p.bullet-list__title= title
+    ul.bullet-list__list
+      each item in list
+        li.bullet-list__item= item

@@ -11,6 +11,7 @@ block variables
   -   {id: "tv", label: "Телевизор", checked: false},
   -   {id: "shampoo", label: "Шампунь", checked: false},
   - ]
+  - var bullet_list_data = ["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]
 
 block content
   .container
@@ -113,11 +114,14 @@ block content
           +rich-checkbox("corridor", "Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
           +rich-checkbox("assistant", "Помощник для инвалидов", "На 1 этаже вас встретит специалист  и проводит до номера.")
         .form-elements__column
+          +bullet-list("Bullet list", bullet_list_data)
 
       .form-elements__block
         .form-elements__column
-        .form-elements__column
-        .form-elements__column
+          +advantage("insert_emoticon", "Комфорт", "Шумопоглощающие стены")
+          +advantage("location_city", "Удобство", "Окно в каждой из спален")
+        .form-elements__review
+          +review("Мурад Сарафанов", "5 дней назад", "Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.")
 
     p Cards
     section.cards
