@@ -3,6 +3,9 @@ extends ../layout/main
 block variables
   - var title = 'MetaLamp Task 2'
   - var pageClass = 'uikit-page'
+  - var rooms_dropdown_options = {"Спальни": 2, "Кровати": 2, "Ванные комнаты": 0}
+  - var guests_dropdown_options = {"Взрослые": 0, "Дети": 0, "Младенцы": 0}
+  - var guests_dropdown_options_selected = {"Взрослые": 2, "Дети": 1, "Младенцы": 0}
   - var expandable_options = [
   -   {id: "breackfast", label: "Завтрак", checked: false}, 
   -   {id: "desk", label: "Письменный стол", checked: true},
@@ -43,7 +46,7 @@ block content
         .form-elements__column
           +text-field("email", "Text field", "Email", "Default")
           +text-field("address", "Text field", "Адрес", "Hover / Focus", "This is pretty awesome")
-          +dropdown("Dropdown", "Сколько гостей", false, "Default")
+          +dropdown("Dropdown", "Сколько гостей", rooms_dropdown_options, false, "Default", true)
           +masked-text-field("date", "Masked text field", "ДД.ММ.ГГГГ")
           .date-dropdowns
             .date-dropdowns__column
@@ -98,12 +101,12 @@ block content
       
       .form-elements__block
         .form-elements__column
-          +dropdown("Dropdown", "2 спальни, 2 кровати...", false, "Default")
-          +dropdown("Dropdown", "2 спальни, 2 кровати...", true, "Expanded")
+          +dropdown("Dropdown", "2 спальни, 2 кровати...", rooms_dropdown_options, false, "Default", false)
+          +dropdown("Dropdown", "2 спальни, 2 кровати...", rooms_dropdown_options, true, "Expanded", false)
         .form-elements__column
-          +dropdown("Dropdown", "Сколько гостей", true)
+          +dropdown("Dropdown", "Сколько гостей", guests_dropdown_options, true, "", true)
         .form-elements__column
-          +dropdown("Dropdown", "2 гостя", true)
+          +dropdown("Dropdown", "2 гостя", guests_dropdown_options_selected, true, "", true)
 
       .form-elements__block
         .form-elements__column

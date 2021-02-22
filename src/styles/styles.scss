@@ -193,6 +193,12 @@
       }
     }
 
+    .buttons {
+      .button:last-child {
+        margin-top: 30px;
+      }
+    }
+
     &__range {
       width: 266px;
     }
