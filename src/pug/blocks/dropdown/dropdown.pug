@@ -15,12 +15,12 @@ mixin dropdown(label, placeholder, options, opened, status, controlled)
           each value, option in options
             li.dropdown__option.option
               p.option__label= option
-              button.option__button -
+              button.option__button.option__button--minus -
               p.option__count= value
-              button.option__button +
+              button.option__button.option__button--plus +
         if controlled
           .dropdown__controls
             +icon-link("Очистить")
             +icon-link("Применить")
-            
+
 
