@@ -1,0 +1,16 @@
+mixin register()
+  .register.card
+    h1.register__title Регистрация аккаунта
+    +text-field("register-name", "", "Имя", "")
+    +text-field("register-second-name", "", "Фамилия", "")
+    .register__gender
+      +radio("register-male", "register-gender", "male", "Мужчина", true)
+      +radio("register-female", "register-gender", "female", "Женщина")
+    +date-dropdown("Дата рождения", "ДД.ММ.ГГГГ")
+    +text-field("register-email", "Данные для входа в сервис", "Email", "")
+    +text-field("register-password", "", "Пароль", "")
+    +toggle("register-get-proposals", "Получать спецпредложения")
+    +button("register-button", "Перейти к оплате", "button--go")
+    .register__alredy
+      p.register__alredy-text Уже есть аккаунт на Toxin
+      +button("register-login", "Войти", "button--light")

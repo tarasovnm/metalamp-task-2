@@ -1,0 +1,30 @@
+.register {
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 700;
+    color: $dark-100;
+  }
+
+  &__gender {
+    display: flex;
+
+    div:first-child {
+      margin-right: 20px;
+    }
+  }
+
+  &__alredy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__alredy-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+  }
+}

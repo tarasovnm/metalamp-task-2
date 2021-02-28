@@ -1,0 +1,10 @@
+mixin find-room()
+  .find-room.card
+    h3.find-room__title Найдём номера под ваши пожелания
+    .find-room__dates
+      .find-room__column
+        +date-dropdown("Прибытие", "ДД.ММ.ГГГГ")
+      .find-room__column
+        +date-dropdown("Выезд", "ДД.ММ.ГГГГ")
+    +dropdown("Гости", "Сколько гостей", rooms_dropdown_options, false, "", true)
+    +button("find-room-button", "Подобрать номер", "button--go")

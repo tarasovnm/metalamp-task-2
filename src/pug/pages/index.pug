@@ -128,7 +128,14 @@ block content
 
     p Cards
     section.cards
-      .air-datepicker
+      .cards__column
+        +find-room()
+        +register()
+      .cards__column
+        +book-room()
+        +login()
+      .cards__column
+        .air-datepicker
 
     p Headers and Footers
     section.headers-footers

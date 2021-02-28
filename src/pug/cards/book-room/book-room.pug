@@ -1,0 +1,13 @@
+mixin book-room()
+  .book-room.card
+    .book-room__room
+      h1.book-room__room-number № 888
+      p.book-room__price 9 990₽ в сутки
+    .book-room__dates
+      .book-room__column
+        +date-dropdown("Прибытие", "ДД.ММ.ГГГГ")
+      .book-room__column
+        +date-dropdown("Выезд", "ДД.ММ.ГГГГ")
+    +dropdown("Гости", "3 гостя", rooms_dropdown_options, false, "", true)
+    +button("book-room-button", "Забронировать", "button--go")
+    

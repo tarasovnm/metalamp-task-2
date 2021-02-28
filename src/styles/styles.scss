@@ -210,8 +210,18 @@
   }
 
   .cards {
+    display: flex;
+    justify-content: space-between;
     padding: 140px;
     background-color: #f4f4f6;
+
+    &__column {
+      width: 380px;
+
+      &:last-child {
+        width: 320px;
+      }
+    }
   }
 
   .headers-footers {
@@ -240,3 +250,9 @@
 @import "../pug/blocks/bullet-list/bullet-list";
 @import "../pug/blocks/advantage/advantage";
 @import "../pug/blocks/review/review";
+
+@import "card.scss";
+@import "../pug/cards/book-room/book-room";
+@import "../pug/cards/find-room/find-room";
+@import "../pug/cards/login/login";
+@import "../pug/cards/register/register";
