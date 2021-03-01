@@ -34,4 +34,41 @@
   &__column:last-child {
     padding-left: 10px;
   }
+
+  &__table {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__table-cell {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-75;
+
+    &:last-child {
+      text-align: right;
+    }
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__total-text {
+    margin: 0;
+    font-size: 19px;
+    line-height: 23px;
+    color: $dark-100;
+    font-weight: 700;
+  }
+
+  &__dotted {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex-grow: 1;
+    border-bottom: 1px dotted $dark-25;
+  }
 }

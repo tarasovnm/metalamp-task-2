@@ -1,2 +1,9 @@
 mixin login()
   .login.card
+    .login__title Войти
+    +text-field("register-email", "", "Email", "")
+    +text-field("register-password", "", "Пароль", "")
+    +button("register-button", "Перейти к оплате", "button--go")
+    .login__registered
+      p.login__registered-text Уже есть аккаунт на Toxin
+      +button("register-login", "Создать", "button--light")

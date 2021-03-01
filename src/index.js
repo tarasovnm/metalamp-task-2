@@ -4,5 +4,8 @@ import initDropdowns from './pug/blocks/dropdown/dropdown';
 
 initDropdowns();
 
-$('.air-datepicker').datepicker({});
+$('.air-datepicker').datepicker({
+  prevHtml: '<i class="material-icons">arrow_back</i>',
+  nextHtml: '<i class="material-icons">arrow_forward</i>'
+});
 

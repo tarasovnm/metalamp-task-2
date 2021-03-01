@@ -9,5 +9,18 @@ mixin book-room()
       .book-room__column
         +date-dropdown("Выезд", "ДД.ММ.ГГГГ")
     +dropdown("Гости", "3 гостя", rooms_dropdown_options, false, "", true)
+    table.book-room__table
+      tr.book-room__table-row
+        td.book-room__table-cell 9 990₽ х 4 суток
+        td.book-room__table-cell 39 960₽
+      tr.book-room__table-row
+        td.book-room__table-cell Сбор за услуги: скидка 2 179₽
+        td.book-room__table-cell 0₽
+      tr.book-room__table-row
+        td.book-room__table-cell Сбор за дополнительные услуги
+        td.book-room__table-cell 300₽
+    .book-room__total
+      p.book-room__total-text Итого
+      p.book-room__dotted
+      p.book-room__total-text 38 081₽
     +button("book-room-button", "Забронировать", "button--go")
-    
